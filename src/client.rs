@@ -115,7 +115,7 @@ impl AriClient {
     }
 
     /// Returns a reference to the API client.
-    pub fn client_arc(&self) -> Arc<Client> {
+    pub fn client_arc(&self) -> Arc<apis::client::Client> {
         self.client.clone()
     }
 }
